@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "config:base",
+        ":dependencyDashboard",
+        ":semanticCommits"
+    ],
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "^cdk8s.yaml$"
+            ],
+            "matchStrings": [
+                "renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[^:]+:=https.*\\/v?(?<currentValue>[\\d\\.rc\\-]*)\\/",
+                "renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: registryUrl=(?<registryUrl>[^\\s]+?))?\\s+[^:]+:=https.*?(?<currentValue>\\d[\\d\\.rc\\-]*).yaml"
+            ],
+            "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
+        }
+    ],
+    "packageRules": [
+        {
+            "matchPackagePatterns": [
+                "redis-operator"
+            ],
+            "groupName": "redis-operator"
+        },
+        {
+            "matchPackagePatterns": [
+                "kong"
+            ],
+            "groupName": "kong"
+        }
+    ]
+}
