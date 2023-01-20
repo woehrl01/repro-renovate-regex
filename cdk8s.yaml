@@ -7,20 +7,8 @@ imports:
   #renovate: datasource=docker depName=quay.io/argoproj/argo-rollouts
   - argo-rollouts:=https://github.com/argoproj/argo-rollouts/releases/download/v1.4.0/install.yaml
 
-  #renovate: datasource=docker depName=ghcr.io/external-secrets/external-secrets
-  - externalsecret:=https://raw.githubusercontent.com/external-secrets/external-secrets/v0.7.2/deploy/crds/bundle.yaml
-
   #renovate: datasource=docker depName=ghcr.io/kedacore/keda
   - keda:=https://github.com/kedacore/keda/releases/download/v2.9.2/keda-2.9.2.yaml
-
-  #renovate: datasource=docker depName=istio/pilot
-  - istio:=https://raw.githubusercontent.com/istio/istio/1.16.1/manifests/charts/base/crds/crd-all.gen.yaml
-
-  #renovate: datasource=docker depName=kong/kubernetes-ingress-controller
-  - kong:=https://raw.githubusercontent.com/Kong/kubernetes-ingress-controller/v2.3.1/deploy/single/all-in-one-dbless.yaml
-
-  #renovate: datasource=docker depName=ghcr.io/metacontroller/metacontroller-helm
-  - metacontroller:=https://raw.githubusercontent.com/metacontroller/metacontroller/v4.7.3/manifests/production/metacontroller-crds-v1.yaml
 
   #renovate: datasource=docker depName=quay.io/spotahome/redis-operator
   - redis-operator:=https://raw.githubusercontent.com/spotahome/redis-operator/v1.2.4/manifests/databases.spotahome.com_redisfailovers.yaml
