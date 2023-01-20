@@ -17,7 +17,7 @@ imports:
   - istio:=https://raw.githubusercontent.com/istio/istio/1.16.1/manifests/charts/base/crds/crd-all.gen.yaml
 
   #renovate: datasource=docker depName=kong/kubernetes-ingress-controller
-  - kong:=https://raw.githubusercontent.com/Kong/kubernetes-ingress-controller/v2.3.1/deploy/single/all-in-one-dbless.yaml
+  - kong:=https://raw.githubusercontent.com/Kong/kubernetes-ingress-controller/v2.8.1/deploy/single/all-in-one-dbless.yaml
 
   #renovate: datasource=docker depName=ghcr.io/metacontroller/metacontroller-helm
   - metacontroller:=https://raw.githubusercontent.com/metacontroller/metacontroller/v4.7.3/manifests/production/metacontroller-crds-v1.yaml
