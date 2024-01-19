@@ -8,7 +8,7 @@ imports:
   - argo-rollouts:=https://github.com/argoproj/argo-rollouts/releases/download/v1.4.0/install.yaml
 
   #renovate: datasource=docker depName=ghcr.io/kedacore/keda
-  - keda:=https://github.com/kedacore/keda/releases/download/v2.9.2/keda-2.9.2.yaml
+  - keda:=https://github.com/kedacore/keda/releases/download/v2.13.0/keda-2.13.0.yaml
 
   #renovate: datasource=docker depName=quay.io/spotahome/redis-operator
   - redis-operator:=https://raw.githubusercontent.com/spotahome/redis-operator/v1.2.4/manifests/databases.spotahome.com_redisfailovers.yaml
