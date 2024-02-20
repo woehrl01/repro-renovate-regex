@@ -5,7 +5,7 @@ imports:
   - argo:=https://raw.githubusercontent.com/argoproj/argo-cd/v2.6.0-rc3/manifests/install.yaml
 
   #renovate: datasource=docker depName=quay.io/argoproj/argo-rollouts
-  - argo-rollouts:=https://github.com/argoproj/argo-rollouts/releases/download/v1.4.0/install.yaml
+  - argo-rollouts:=https://github.com/argoproj/argo-rollouts/releases/download/v1.6.6/install.yaml
 
   #renovate: datasource=docker depName=ghcr.io/kedacore/keda
   - keda:=https://github.com/kedacore/keda/releases/download/v2.9.2/keda-2.9.2.yaml
