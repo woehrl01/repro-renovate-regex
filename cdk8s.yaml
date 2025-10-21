@@ -2,7 +2,7 @@ language: typescript
 imports:
   - k8s@1.23.0
   #renovate: datasource=docker depName=argoproj/argocd
-  - argo:=https://raw.githubusercontent.com/argoproj/argo-cd/v2.6.0-rc3/manifests/install.yaml
+  - argo:=https://raw.githubusercontent.com/argoproj/argo-cd/v2.6.15/manifests/install.yaml
 
   #renovate: datasource=docker depName=quay.io/argoproj/argo-rollouts
   - argo-rollouts:=https://github.com/argoproj/argo-rollouts/releases/download/v1.4.0/install.yaml
